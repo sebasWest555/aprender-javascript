@@ -39,6 +39,28 @@ console.warn(numerr !== "31"); // lo mismo que con los == y ===
 
 //logicos
 
+let mayoerdeedad = true;
+let tieneentrada = true;
+//and
+console.log(mayoerdeedad && tieneentrada );
+//or
+console.log(mayoerdeedad || tieneentrada);
+//not
+console.log(!mayoerdeedad)
+
 //cadena
 
+let mensasje1 = ("hola");
+let mensaje2 = ("que pedo mierda");
+
+let mt = mensasje1 + " " + mensaje2;
+
+mt  += " me la pelas, ca";
+
+console.warn(mt);
+
 //increase and decrease
+/*
+es lo de ++ y --
+*/
+
