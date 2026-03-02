@@ -107,4 +107,14 @@ console.log(
 mensa.repeat(12)
 );
 
+//buscar en un texto
 
+let miCadena = "rest in peace el amor que te tenia";
+
+console.log(
+    miCadena.match("que")
+);
+
+console.log(
+    miCadena.search("amor")
+);
