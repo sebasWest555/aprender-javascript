@@ -2,7 +2,7 @@
 
 let nombre = "sebas west";
 
-let nombres = ["sebas", "vane", "axel", "jaime"];
+let nombres = ["sebas", "vane", "axel", "jaime", "alvaro", "leo", "pablo", "jesus", "potter"];
 
 let pelis = new Array("hievos 1","huevos 2","huevos 3");
 
@@ -29,4 +29,9 @@ if (elemento >= nombres.length) {
     alert("ese no esta vale, pon otro");
 }else{
     alert("andale ese si está, es: ".concat(nombres[elemento].toUpperCase()));
+}
+
+for (let i = 0; i < nombres.length; i++) {
+    console.log(nombres[i].toUpperCase());
+    
 }
