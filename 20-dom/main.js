@@ -136,10 +136,29 @@ tarjeta.textContent = "nuevo texto en tarjeta";
 tarjeta.innerHTML = "<strong>contenido HTML de mi tarjeta</strong>";
 
 tarjeta.setAttribute("data-id", 12);
-tarjeta.setAttribute("class", "que pex");
+//tarjeta.setAttribute("class", "que pex");
 
 console.log(tarjeta.getAttribute("data-id"));
 
 tarjeta.style.border = "1px solid blue";
 tarjeta.style.backgroundColor = "steelblue";
 tarjeta.style.padding = "30px";
+
+tarjeta.classList.add("destacar2");
+
+tarjeta.classList.remove("destacar");
+
+tarjeta.classList.remove("remarcado");
+
+tarjeta.classList.toggle/*si esta lo quita, si no lo pone*/("ricosexo");
+
+tarjeta.classList.toggle("destacar2");
+
+const titular = document.createElement("h2");
+titular.textContent = ("arriba el cruz azul hdp");
+
+//tarjeta.append(titular);
+
+tarjeta.insertBefore(titular, tarjeta.firstChild);
+
+//tarjeta.querySelector("strong").remove();
