@@ -4,3 +4,9 @@ body{
     margin: 0;
     padding: 20px;
 }
+.info{
+    display: none;
+    border: 2px dashed #4240b8;
+    padding: 10px;
+    margin: 7px;
+}

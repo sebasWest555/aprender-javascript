@@ -5,9 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="ejercicio38.js" defer></script>
     <link rel="stylesheet" href="styles.css">
-    <title>ejercicio 31</title>
+    <title>ejercicio 38</title>
 </head>
 <body>
-    
+    <h1>puts tods</h1>
+
+    <form action="#" method="post" id="formulario">
+
+        <label for="nombre">nombre: </label> <br/>
+        <input type="text" name="nombre" id="nombre"/>
+        <span id = "error_nombre"></span><br/>
+
+        <label for="apellido">apellido: </label> <br/>
+        <input type="text" name="apellido" id="apellido"/>
+        <span id = "error_apellido"></span><br/>
+        
+        <label for="edad">edad: </label> <br/>
+        <input type="number" name="edad" id="edad"/>
+        <span id = "error_edad"></span><br/>
+
+        <input type="submit" value="enviar" id="submit">
+    </form>
+
+    <div class = "info">
+        <h3>informacion del usuario</h3>
+        <hr>
+
+        <p id ="info_nombre">
+            Nombre: <strong></strong>
+        </p>
+
+        <p id = "info_apellido">
+            Apellido: <strong></strong>
+        </p>
+
+        <p id = "info_edad">
+            Edad: <strong></strong>
+        </p>
+    </div>
 </body>
 </html>
