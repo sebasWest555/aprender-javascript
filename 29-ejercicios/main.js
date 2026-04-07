@@ -18,7 +18,7 @@ tareas:
 - ej.40: funcion para guardar peliculas co n los datos necesarios º
 - ej.41: fucion para mostrar las pelis extraidas del localstorage º
 - ej.42: haz que las pelis carguen autmaticamente al abrir la web º
-- ej.43: funcion para eliminar pelis. 
+- ej.43: funcion para eliminar pelis. º
 */
 
 function eliminar(indice){
