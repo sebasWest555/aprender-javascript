@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="assets/js/main.js" defer></script>
-    <script src="assets/js/slider.js" defer></script>
-    <script src="assets/js/articles.js" defer></script>
     <script src="assets/js/login.js" defer></script>
     <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css">
     <link rel="stylesheet" href="assets/css/reset.css">
@@ -47,36 +45,64 @@
             </nav>
         </header>
 
-        <section class="layout__slider">
-            <button class="slider__btn-prev">
-                <i class="slider__icon fa-solid fa-caret-left"></i>
-            </button>
+        
+        <main class="layout__main">
 
-            <div class="slider__slides">
-                <article class="slides__item slides__item--active">
-                    <img class="slides__img" alt="hojas" src="assets/img/hojas.jpg">
+            <!--aqui va el acordeon-->
+
+            <h2 class="main__title">sobre mi</h2>
+
+            <div class="main__acordion">
+                <article class="acordion__collapse acordion__collapse--open">
+
+                    <header class="collapse__header">
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <i class="fa-solid fa-chevron-up"></i>
+                        <p class="collapse__title">who are we?</p>
+                    </header>
+
+                    <div class="collapse__body">
+                        <p class="collapse__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, suscipit rerum! Rerum, aut deserunt? Vel, corrupti! Quos, dolore alias cupiditate in mollitia consequatur ipsam vel. Excepturi expedita fugit vitae! Facilis.
+                        </p>
+                    </div>
+
                 </article>
 
-                <article class="slides__item">
-                    <img class="slides__img" alt="cielo" src="assets/img/cielo.jpg">
+                <article class="acordion__collapse acordion__collapse--open">
+
+                    <header class="collapse__header">
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <i class="fa-solid fa-chevron-up"></i>
+                        <p class="collapse__title">what we do?</p>
+                    </header>
+
+                    <div class="collapse__body">
+                        <p class="collapse__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, suscipit rerum! Rerum, aut deserunt? Vel, corrupti! Quos, dolore alias cupiditate in mollitia consequatur ipsam vel. Excepturi expedita fugit vitae! Facilis.
+                        </p>
+                    </div>
+
                 </article>
 
-                <article class="slides__item">
-                    <img class="slides__img" alt="rojo" src="assets/img/rojo.jpg">
+                <article class="acordion__collapse acordion__collapse--open">
+
+                    <header class="collapse__header">
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <i class="fa-solid fa-chevron-up"></i>
+                        <p class="collapse__title">what our customers says?</p>
+                    </header>
+
+                    <div class="collapse__body">
+                        <p class="collapse__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, suscipit rerum! Rerum, aut deserunt? Vel, corrupti! Quos, dolore alias cupiditate in mollitia consequatur ipsam vel. Excepturi expedita fugit vitae! Facilis.
+                        </p>
+                    </div>
+
                 </article>
 
+                
             </div>
-
-            <button class="slider__btn-next">
-                <i class="slider__icon fa-solid fa-caret-right"></i>
-            </button>
-        </section>
-
-        <main class="layout__articles">
-
-            <!--aqui va los aerticulos-->
-
-            
 
         </main>
 
