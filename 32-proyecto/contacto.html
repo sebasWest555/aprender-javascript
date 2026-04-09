@@ -7,16 +7,19 @@
 
     <script src="assets/js/main.js" defer></script>
     <script src="assets/js/login.js" defer></script>
-    <script src="assets/js/acordion.js" defer></script>
+    <script src="assets/js/contacto.js" defer></script>
     <script src="assets/js/themes.js" defer></script>
+
+
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
 
     <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-    
 
-    <title>about us</title>
+
+    <title>contacto</title>
 </head>
 
 <body>
@@ -38,7 +41,7 @@
                     </li>
 
                     <li class="list__item">
-                        <a href="sobreMI.html" class="list__link">SOBRE MI</a>
+                        <a href="sobre-mi.html" class="list__link">SOBRE MI</a>
                     </li>
 
                     <li class="list__item">
@@ -48,64 +51,55 @@
             </nav>
         </header>
 
-        
+
         <main class="layout__main">
 
-            <!--aqui va el acordeon-->
+            <!--aqui va el formulario-->
 
-            <h2 class="main__title">sobre mi</h2>
+            <h2 class="main__title">CONTACTO</h2>
 
-            <div class="main__acordion">
-                <article class="acordion__collapse">
+            <form class="main__contact">
 
-                    <header class="collapse__header">
-                        <i class="fa-solid fa-chevron-down"></i>
-                        <i class="fa-solid fa-chevron-up"></i>
-                        <p class="collapse__title">who are we?</p>
-                    </header>
+                <div class="contact__group">
+                    <label class="conntact__label" for="name">nombre</label>
+                    <input type="text" name="name" id="name" class="contact__input" />
+                </div>
 
-                    <div class="collapse__body">
-                        <p class="collapse__text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, suscipit rerum! Rerum, aut deserunt? Vel, corrupti! Quos, dolore alias cupiditate in mollitia consequatur ipsam vel. Excepturi expedita fugit vitae! Facilis.
-                        </p>
-                    </div>
+                <div class="contact__group">
+                    <label class="conntact__label" for="surname">apellido</label>
+                    <input type="text" name="surname" id="surname" class="contact__input" />
+                </div>
 
-                </article>
+                <div class="contact__group">
+                    <label class="conntact__label" for="email">Email</label>
+                    <input type="email" name="email" id="email" class="contact__input" />
+                </div>
 
-                <article class="acordion__collapse ">
+                <div class="contact__group">
+                    <label class="contact__label" for="gender">genero</label>
+                    <select name="gender" id="gender" class="contact__select">
 
-                    <header class="collapse__header">
-                        <i class="fa-solid fa-chevron-down"></i>
-                        <i class="fa-solid fa-chevron-up"></i>
-                        <p class="collapse__title">what we do?</p>
-                    </header>
+                        <option class="select__option" value="hombre">macho</option>
+                        <option class="select__option" value="mujer">hembra</option>
+                        <option class="select__option" value="otro">raro</option>
 
-                    <div class="collapse__body">
-                        <p class="collapse__text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, suscipit rerum! Rerum, aut deserunt? Vel, corrupti! Quos, dolore alias cupiditate in mollitia consequatur ipsam vel. Excepturi expedita fugit vitae! Facilis.
-                        </p>
-                    </div>
+                    </select>
+                </div>
 
-                </article>
+                <div class="contact__group">
+                    <label class="conntact__label" for="date">fecha de nacimiento</label>
+                    <input type="date" name="date" id="date" class="contact__input" />
+                </div>
 
-                <article class="acordion__collapse ">
+                <div class="contact__group">
+                    <label class="conntact__label" for="years">edad</label>
+                    <input type="number" name="years" id="years" class="contact__input" />
+                </div>
 
-                    <header class="collapse__header">
-                        <i class="fa-solid fa-chevron-down"></i>
-                        <i class="fa-solid fa-chevron-up"></i>
-                        <p class="collapse__title">what our customers says?</p>
-                    </header>
+                <input type="submit" value="enviar" class="contact__btn">
 
-                    <div class="collapse__body">
-                        <p class="collapse__text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, suscipit rerum! Rerum, aut deserunt? Vel, corrupti! Quos, dolore alias cupiditate in mollitia consequatur ipsam vel. Excepturi expedita fugit vitae! Facilis.
-                        </p>
-                    </div>
 
-                </article>
-
-                
-            </div>
+            </form>
 
         </main>
 
@@ -119,11 +113,13 @@
                 </div>
 
                 <div class="heaader__container-img">
-                    <img class="header__img" src="assets/img/caracol.jpg" alt="caracol" >
+                    <img class="header__img" src="assets/img/caracol.jpg" alt="caracol">
                 </div>
 
                 <p class="header__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, reprehenderit doloremque ad, suscipit maiores blanditiis unde eius dolorem sit consectetur veniam porro in ipsum eveniet odit error distinctio fugiat illo.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, reprehenderit doloremque ad,
+                    suscipit maiores blanditiis unde eius dolorem sit consectetur veniam porro in ipsum eveniet odit
+                    error distinctio fugiat illo.
                 </p>
 
             </header>
@@ -136,17 +132,17 @@
                 </div>
 
                 <div class="login__form-group">
-                    <label class="login__label" for="name" >Nombre:</label>
+                    <label class="login__label" for="name">Nombre:</label>
                     <input type="text" id="name" name="name" class="login__input" required>
                 </div>
 
                 <div class="login__form-group">
-                    <label class="login__label" for="mail" >E-mail:</label>
+                    <label class="login__label" for="mail">E-mail:</label>
                     <input type="email" id="email" name="email" class="login__input" required>
                 </div>
 
                 <div class="login__form-group">
-                    <label class="login__label" for="pass" >contraseña:</label>
+                    <label class="login__label" for="pass">contraseña:</label>
                     <input type="password" id="pass" name="pass" class="login__input" required>
                 </div>
 
@@ -155,7 +151,7 @@
             </form>
 
             <div class="aside__data aside__data--hide">
-                <p  class="data__text">
+                <p class="data__text">
                     helloooo: <span class="data__name"></span>
                 </p>
                 <button class="data__logout">cerrar sesion</button>
